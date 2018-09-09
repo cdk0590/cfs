@@ -107,11 +107,11 @@ Resources:
     Properties:
       EnableDnsSupport: 'true'
       EnableDnsHostnames: 'true'
-      CidrBlock: 10.0.0.0/16
+      CidrBlock: 172.31.0.0/16
   PublicSubnet:
     Type: AWS::EC2::Subnet
     Properties:
-      CidrBlock: 10.0.0.0/24
+      CidrBlock: 172.31.0.0/24
       VpcId:
         Ref: VPC
   InternetGateway:
